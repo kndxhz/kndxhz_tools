@@ -1,0 +1,26 @@
+
+{{summaryPlaceholder}}
+
+作用:
+    {{extendedSummaryPlaceholder}}作用
+
+{{#parametersExist}}
+参数:
+{{#args}}
+    {{var}} - {{descriptionPlaceholder}} - {{typePlaceholder}}（必填）
+{{/args}}
+{{#kwargs}}
+    {{var}} - {{descriptionPlaceholder}} - {{typePlaceholder}}（可选，默认值: {{&default}})
+{{/kwargs}}
+{{/parametersExist}}
+
+{{#returnsExist}}
+返回:
+{{#returns}}
+    {{descriptionPlaceholder}} - {{typePlaceholder}}
+{{/returns}}
+{{/returnsExist}}
+
+示例:
+```python
+# 示例代码
