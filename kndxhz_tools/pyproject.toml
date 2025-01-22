@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "kndxhztools"
+name = "kndxhz_tools"
 version = "0.1.0"
 description = "一个自用的工具集"
 authors = ["kndxhz <kndxhz@163.com>"]
