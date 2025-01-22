@@ -1,5 +1,5 @@
 """
-kndxhz_tools
+kndxhztools
 
 A collection of useful tools for various tasks.
 """
@@ -47,7 +47,7 @@ def get_ip(use_all: bool = False) -> list:
           
     return ip
 
-print(f"""欢迎使用 kndxhz_tools v{__version__}~""")
+print(f"""欢迎使用 kndxhztools v{__version__}~""")
 
 if __name__ == "__main__":
     print(get_ip())
