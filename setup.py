@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='kndxhz_tools',
-    version='0.1.0',
+    version='0.2.1',
     packages=find_packages(),
     install_requires=[
         # 如果有依赖项，请在这里添加
