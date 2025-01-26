@@ -4,7 +4,7 @@ kndxhz_tools
 A collection of useful tools for various tasks.
 """
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 __author__ = "kndxhz"
 
 import subprocess
