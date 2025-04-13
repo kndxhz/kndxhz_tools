@@ -4,10 +4,8 @@ kndxhz_tools
 A collection of useful tools for various tasks.
 """
 
-__version__ = "0.2.1"
+__version__ = "0.2.2"
 __author__ = "kndxhz"
-
-import subprocess
 
 
 def version():
@@ -36,6 +34,7 @@ def get_ip(use_all: bool = False) -> list:
 
 
     """
+    import subprocess
 
     if use_all:
         ip = []
@@ -81,5 +80,32 @@ def write_csv(*data, path: str, mode: str = "w", end: str = "\n") -> bool:
 
 print(f"""欢迎使用 kndxhz_tools v{__version__}~""")
 
+
+def run_time(func):
+    """
+    作用:
+        装饰器,记录函数运行时间
+
+    示例:
+    ```python
+    @run_time
+    def main():
+        pass
+    main()
+    """
+    import time
+
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        name = func.__name__
+        end_time = time.time()
+        print(f"{name} 函数运行时间: {end_time - start_time:.10f}秒")
+        return result
+
+    return wrapper
+
+
 if __name__ == "__main__":
-    write_csv(["1", "2", "3"], path="test.csv")
+
+    main()
